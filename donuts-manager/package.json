@@ -1,0 +1,21 @@
+{
+  "name": "donuts-manager",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "formik": "^2.4.6",
+    "next": "^14.2.7",
+    "react": "^18.3.1",
+    "react-dom": "^18",
+    "react-redux": "^9.1.2",
+    "redux": "^5.0.1",
+    "yup": "^1.4.0"
+  }
+}

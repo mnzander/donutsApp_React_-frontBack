@@ -1,11 +1,11 @@
 export const getAllDonuts = async () => {
-  const response = await fetch('http://localhost:9000/donuts/');
+  const response = await fetch('https://donuts-manager-backend.onrender.com/donuts/');
   const donuts = await response.json();
   return donuts;
 };
 
 export const getDonutById = async (id) => {
-  const response = await fetch('http://localhost:9000/donuts/'+id);
+  const response = await fetch('https://donuts-manager-backend.onrender.com/donuts/'+id);
   const donut = await response.json();
   return donut;
 }
@@ -13,7 +13,7 @@ export const getDonutById = async (id) => {
 export const createDonut = async(bodyParam) => {
   try{
     console.log(bodyParam)
-    const response = await fetch('http://localhost:9000/donuts/', {
+    const response = await fetch('https://donuts-manager-backend.onrender.com/donuts/', {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: bodyParam
@@ -29,7 +29,7 @@ export const createDonut = async(bodyParam) => {
 
 export const deleteDonutById = async (id) => {
   try {
-    const response = await fetch(`http://localhost:9000/donuts/${id}`, {
+    const response = await fetch(`https://donuts-manager-backend.onrender.com/donuts/${id}`, {
       method: 'DELETE'
     });
     if (!response.ok) {
@@ -47,7 +47,7 @@ export const deleteDonutById = async (id) => {
 
 export const updateDonut = async (id, bodyParam) => {
   try{
-    const response = await fetch('http://localhost:9000/donuts/'+id, {
+    const response = await fetch('https://donuts-manager-backend.onrender.com/donuts/'+id, {
       method: 'PUT',
       headers: { "Content-Type": "application/json" },
       body: bodyParam

@@ -1,6 +1,7 @@
 const express = require("express");
 const cors = require("cors");
 const mongoose = require("mongoose");
+require("dotenv").config();
 
 const PORT = 9000;
 const app = express();
@@ -8,8 +9,7 @@ const app = express();
 const donutsRouter = require("./router/donutsRouter")
 
 //Conexion a MONGO:
-const url_mongo= "mongodb+srv://andermunozrivas:ZzTPvpQuQHQHC8BO@cluster0.4tf9j.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0";
-mongoose.connect(url_mongo);
+mongoose.connect(process.env.MONGODB_URI);
 const db = mongoose.connection
 
 db.on("error", (error) => {

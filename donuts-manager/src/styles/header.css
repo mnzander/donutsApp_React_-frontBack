@@ -1,0 +1,238 @@
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+    .header {
+        display: flex;
+        background-color: rgb(199, 178, 57);
+        height: 20vh;
+        position: relative;
+
+        .button-logo{
+            border: transparent;
+            background-color: transparent;
+            display: flex;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 1px;
+            transform: translateX(-50%); /* Centra el contenedor */
+
+            .logo {
+                height: 11vh;
+            }
+        }
+
+        .links {
+            display: flex;
+            gap: 6vw;
+            font-family: "Merriweather", serif;
+            font-size: 4.7vw;
+            padding: 0 20px;
+            margin-top: 11vh;
+
+            .link{
+                text-decoration: none;
+                color:  rgb(80, 25, 0);
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
+
+        .carrito{
+            position: absolute;
+            top: 3vh;
+            left: 80%;
+
+            .carrito-btn {
+                border-radius: 50%;
+                border: 0.1vh solid rgb(80, 25, 0);
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 4.5vh;
+                width: 4.5vh;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:hover svg{
+                    transition: .3s ease;
+                    height: 2.5vh;
+                    width: 2.5vh;
+                }
+
+                svg{
+                    height: 3vh;
+                    width: 3vh;
+                    fill: rgb(80, 25, 0);
+                }
+            }
+            .contador-favs {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: red;
+                color: white;
+                font-size: 1.5vh;
+                border: 0.1vh solid rgb(80, 25, 0);
+                top: 3.5vh;
+                right: -0.3vh;
+                height: 2.2vh;
+                width: 2.2vh;
+            }
+
+            .detalle-carrito{
+                position: absolute;
+                border-radius: 3vh;
+                border: 0.3vh solid rgb(80, 25, 0);
+                background-color: rgb(250, 228, 102);
+                padding: 2vh;
+                width: 30vh;
+                height: 30vh;
+                margin-top: 10px;
+                left: -27vh;
+                z-index: 1;
+
+                .detalle-carrito-title{
+                    font-size: 2.5vh;
+                    color: rgb(80, 25, 0);
+                    font-weight: bold;
+                }
+
+                li{
+                    color: rgb(80, 25, 0);
+                    font-size: 1.9vh;
+                }
+            }
+        }
+    }  
+}
+
+
+/*PC*/
+@media only screen and (min-width: 901px) {
+    .header {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(199, 178, 57);
+        height: 15vh;
+        position: relative;
+
+        .button-logo{
+            border: transparent;
+            background-color: transparent;
+            margin-left: 5vh;
+            height: 10vh;
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+
+            .logo {
+                height: 15vh;
+            }
+        }
+
+        .button-logo:hover{
+            cursor: pointer;
+        }
+
+        .links {
+            display: flex;
+            gap: 120px;
+            font-family: "Merriweather", serif;
+            font-size: 2.7vh;
+
+            .link{
+                text-decoration: none;
+                color:  rgb(80, 25, 0);
+                text-transform: uppercase;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+
+            .link:hover{
+                cursor: pointer;
+                text-decoration: underline;
+                font-size: 2.8vh;
+                color: rgb(255, 240, 227);
+            }
+        }
+
+        .carrito{
+            position: absolute;
+            right: 5%;
+
+            .carrito-btn {
+                border-radius: 50%;
+                border: 0.3vh solid rgb(80, 25, 0);
+                background-color: white;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 6vh;
+                width: 6vh;
+
+                &:hover{
+                    cursor: pointer;
+                }
+
+                &:hover svg{
+                    transition: .3s ease;
+                    height: 2.5vh;
+                    width: 2.5vh;
+                }
+
+                svg{
+                    height: 3.5vh;
+                    width: 3.5vh;
+                    fill: rgb(80, 25, 0);
+                }
+            }
+            .contador-favs {
+                position: absolute;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: red;
+                color: white;
+                font-size: 1.5vh;
+                border: 0.1vh solid rgb(80, 25, 0);
+                top: 4.5vh;
+                right: -0.3vh;
+                height: 2.2vh;
+                width: 2.2vh;
+            }
+
+            .detalle-carrito{
+                position: absolute;
+                border-radius: 3vh;
+                border: 0.3vh solid rgb(80, 25, 0);
+                background-color: rgb(250, 228, 102);
+                padding: 2vh;
+                width: 30vh;
+                height: 30vh;
+                margin-top: 10px;
+                left: -27vh;
+                z-index: 1;
+
+                .detalle-carrito-title{
+                    font-size: 2.5vh;
+                    color: rgb(80, 25, 0);
+                    font-weight: bold;
+                }
+
+                li{
+                    color: rgb(80, 25, 0);
+                    font-size: 1.9vh;
+                }
+            }
+        }
+    }
+}

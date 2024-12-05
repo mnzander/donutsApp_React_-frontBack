@@ -19,8 +19,8 @@ export default function FooterComponent() {
             <div className='funcionalidades'>
                 <img className="logo2" src="donuts.png"></img>
                 <Link href="/DonutsList" className='link-footer'><p>Productos</p></Link>
-                <Link href="/CreateDonut" className='link-footer'><p>Crea tu donut</p></Link>
-                <Link href="/Contact" className='link-footer'><p>Sobre nosotros</p></Link>
+                <Link href="/CreateDonut" className='link-footer'><p>Crear</p></Link>
+                <Link href="/Contact" className='link-footer'><p>Contacto</p></Link>
             </div>
             <div className="newsletter">
                 <h3>Newsletter</h3>

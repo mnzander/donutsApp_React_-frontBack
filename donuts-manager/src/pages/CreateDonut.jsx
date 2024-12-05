@@ -8,7 +8,7 @@ export default function CreateDonut() {
     <div>
       <HeaderComponent />
       <div className='create-container'>
-        <h1 className='create-title'>Crea tu propio Donut</h1>
+        <h1 className='create-title'>Crea tu Donut</h1>
         <CreateDonutComponent />
       </div>
       <FooterComponent />

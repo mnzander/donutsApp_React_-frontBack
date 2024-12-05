@@ -1,0 +1,14 @@
+.choco-imgs{
+    display: flex;
+    justify-content: center;
+    height: 10vh;
+
+    .chocolate{
+        height: 22.7vh;
+    }
+    
+    .chocolate-reverse{
+        height: 22.7vh;
+        transform: rotateY(180deg);
+    }
+}

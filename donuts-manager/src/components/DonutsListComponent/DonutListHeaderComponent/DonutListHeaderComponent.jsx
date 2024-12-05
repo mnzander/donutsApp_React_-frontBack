@@ -17,8 +17,8 @@ export default function DonutListHeaderComponent({ countFav, carrito }) {
       </button>
       <div className="links">
         <Link className="link" href="/DonutsList" >Productos</Link>
-        <Link className="link" href="/CreateDonut">Crea tu Donut</Link>
-        <Link className="link" href="/Contact">Sobre nosotros</Link>
+        <Link className="link" href="/CreateDonut">Crear</Link>
+        <Link className="link" href="/Contact">Contacto</Link>
       </div>
       <div className="carrito">
         <button onClick={cartDetailsHandler} className='carrito-btn'>

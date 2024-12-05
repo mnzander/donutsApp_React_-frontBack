@@ -6,7 +6,7 @@ export default function Home() {
     <>
     <HeaderComponent />
     <div className="welcome-container">
-      <p className="welcome">Bienvenido a la página web de Donuts España</p>
+      <p className="welcome">Bienvenide a la página web de Donuts España</p>
     </div>
     <FooterComponent />
     </>

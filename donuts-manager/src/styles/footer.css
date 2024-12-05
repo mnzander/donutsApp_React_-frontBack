@@ -1,0 +1,270 @@
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+    .footer-container {
+        margin-top: 4vh;
+        position: relative;
+
+        .choco-imgs{
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+
+            .chocolate2{
+                height: 22.7vh;
+                transform: rotateX(180deg);
+            }
+
+            .chocolate-reverse2{
+                height: 22.7vh;
+                transform: rotateX(180deg) scaleX(-1); /* Ángulo ligeramente mayor */
+            }
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30vh;
+            background-color: rgb(199, 178, 57);
+            width: 100%;
+            height: 50vh;
+
+            .button-logo{
+                display: none;
+            }
+
+            .funcionalidades {    
+                .logo2 {
+                    height: 18vh;
+                    margin-left: -1vh;
+                    margin-top: -2vh;
+                    margin-bottom: -5vh;
+                }
+
+                .link-footer{
+                    text-decoration: none;
+                }
+
+                p{
+                    display: flex;
+                    justify-content: center;
+                    font-size: 6.5vw;
+                    color:  rgb(80, 25, 0);
+                    font-weight: bold;
+                    letter-spacing: 1vw;
+                }
+            }
+
+            .newsletter{
+                display: none;
+            }
+        } 
+    }
+}
+
+/*PC*/
+@media only screen and (min-width: 901px) {
+    .footer-container {
+        margin-top: 4vh;
+        position: relative;
+
+        .choco-imgs{
+            display: flex;
+            justify-content: center;
+            height: fit-content;
+        
+
+            .chocolate2{
+                height: 22.7vh;
+                transform: rotateX(180deg);
+            }
+
+            .chocolate-reverse2{
+                height: 22.7vh;
+                transform: rotateX(180deg) scaleX(-1); /* Ángulo ligeramente mayor */
+            }
+        }
+
+        .footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30vh;
+            background-color: rgb(199, 178, 57);
+            width: 100%;
+            height: 35vh;
+
+            .button-logo{
+                border: transparent;
+                background-color: transparent;
+                height: 10vh;
+                display: flex;
+                align-items: center;
+
+                .logo {
+                    height: 20vh;
+                }
+            }
+        
+            .button-logo:hover{
+                cursor: pointer;
+            }
+
+            .funcionalidades {
+                
+                .logo2 {
+                    height: 10vh;
+                    margin-left: -1vh;
+                    margin-top: -2vh;
+                    margin-bottom: -3vh;
+                }
+
+                .link-footer{
+                    text-decoration: none;
+                }
+
+                p{
+                    font-size: 2vh;
+                    color:  rgb(80, 25, 0);
+                    font-weight: bold;
+                    letter-spacing: 3px;
+
+                    &:hover{
+                        cursor: pointer;
+                        color: white;
+                        text-decoration: underline;
+                        text-underline-offset: 0.4vh;
+                    }
+                }
+            }
+
+            .newsletter{
+                display: flex;
+                flex-direction: column;
+
+                h3{
+                    display: flex;
+                    align-items: center;
+                    font-size: 2vh;
+                    letter-spacing: 0.3vh;
+                    color:  rgb(80, 25, 0);
+                }
+
+                .form{
+                    display: inline-block;
+                    margin-bottom: 4vh;
+                    position: relative;
+
+                    .email {
+                        font-family: "Merriweather", serif;
+                        background-color: transparent;
+                        border: transparent;
+                        letter-spacing: 0.2vh;
+                        font-size: 1.4vh;
+                        font-weight: bold;
+                        color:  black;
+                        padding: 2vh 0;
+                        width: 35vh;
+                        border-bottom: 0.3vh solid rgb(80, 25, 0);
+
+                        &:focus {
+                            outline: none;
+                        }
+
+                        &::placeholder{
+                            color: rgba(80, 25, 0, 0.726);
+                        }
+                    }
+
+                    .boton {
+                        background-color: transparent;
+                        border: transparent;
+                        background-color: rgb(63, 28, 5);
+                        display: flex;
+                        height: 2.5vh;
+                        width: 3vh;
+                        justify-content: flex-end;
+                        margin-top: -40px;
+                        right:0;
+                        position: absolute;
+
+                        svg{
+                            height: 2vh;
+                            width: 2vh;
+                        }
+
+                        svg:hover{
+                            cursor: pointer;
+                            fill:black;
+                        }
+                    }
+                }
+                
+                .social .socialmedia .lista {
+                    display: flex;
+                    flex-direction: row;
+                    margin-top: -2vh;
+                    gap: 3vh;
+
+                    .item{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 4.5vh;
+                        height: 4.5vh;
+                        border-radius: 50%;
+
+                        svg{
+                            width: 20vw;
+                            height: 3vh;
+                        }
+
+                        &:hover{
+                            cursor: pointer;
+                        }
+                    }
+
+
+                    .tw{
+                        background: rgb(0, 0, 0);
+                    }
+
+                    .fb{
+                        background: rgb(0, 85, 165);
+                    }
+
+                    .ig{
+                        background: conic-gradient(
+                            from 240deg,
+                            #f09433,
+                            #e6683c,
+                            #dc2743,
+                            #cc2366,
+                            #bc1888,
+                            #e1306c,
+                            #fd1d1d,
+                            #f56040,
+                            #f77737,
+                            #fcaf45 370deg,
+                            #ffdc80 370deg,
+                            #f09433 370deg
+                        );
+                    }
+
+                    .yt{
+                        background: rgb(255, 0, 0);
+                    }
+
+                    .item a {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 100%;
+                        height: 100%;
+                        text-decoration: none; /* Elimina el subrayado de los enlaces */
+                    } 
+                }  
+            }
+        } 
+    }
+}

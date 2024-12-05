@@ -1,0 +1,30 @@
+/* MOBILE */
+@media only screen and (max-width: 900px) {
+    .welcome-container{
+        margin-top: 10vh;
+        margin-bottom: -2vh;
+        display: flex;
+        padding: 0 20px;
+        
+        .welcome{
+            font-size: 13vw;
+            color: rgb(255, 244, 88);
+        }
+    }
+}
+
+
+/*PC*/
+@media only screen and (min-width: 901px) {
+    .welcome-container{
+        display: flex;
+        justify-content: center;
+        padding: 0 40vh;
+        margin-bottom: -10vh;
+
+        .welcome{
+            font-size: 12.5vh;
+            color: rgb(255, 244, 88);
+        }
+    }
+}

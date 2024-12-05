@@ -1,36 +1,37 @@
 /* MOBILE */
-@media only screen and (max-width: 900px) {}
-.contact-page{
-    margin-top: 6vh;
-    margin-bottom: -3vh;
-    padding: 0 20px;
-}
-
-.contact-comp {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
-    gap: 5vh;
-    width: fit-content;
-    margin: auto;
-
-    .contact-each {
-        color: white;
-        font-size: 5vw;
-        font-style: oblique;
+@media only screen and (max-width: 500px) {
+    .contact-page{
+        margin-top: 6vh;
+        margin-bottom: -3vh;
+        padding: 0 20px;
     }
 
-    .contact-info{
-        color:  rgb(255, 244, 88);
-        font-size: 5vw;
-        margin-left: 2vh;
+    .contact-comp {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-start;
+        gap: 5vh;
+        width: fit-content;
+        margin: auto;
 
+        .contact-each {
+            color: white;
+            font-size: 5vw;
+            font-style: oblique;
+        }
+
+        .contact-info{
+            color:  rgb(255, 244, 88);
+            font-size: 5vw;
+            margin-left: 2vh;
+
+        }
     }
 }
 
 /*PC*/
-@media only screen and (min-width: 901px) {
+@media only screen and (min-width: 501px) {
     .contact-page{
         margin-bottom: 5vh;
     }

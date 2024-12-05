@@ -2,8 +2,8 @@
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
   "/_document": "pages/_document.js",
-  "/": "pages/index.js",
-  "/ProductDetail": "pages/ProductDetail.js",
+  "/DonutsList": "pages/DonutsList.js",
+  "/CreateDonut": "pages/CreateDonut.js",
   "/Contact": "pages/Contact.js",
-  "/DonutsList": "pages/DonutsList.js"
+  "/": "pages/index.js"
 }

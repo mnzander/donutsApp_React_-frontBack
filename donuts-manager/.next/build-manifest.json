@@ -22,6 +22,11 @@
       "static/chunks/main.js",
       "static/chunks/pages/Contact.js"
     ],
+    "/CreateDonut": [
+      "static/chunks/webpack.js",
+      "static/chunks/main.js",
+      "static/chunks/pages/CreateDonut.js"
+    ],
     "/DonutsList": [
       "static/chunks/webpack.js",
       "static/chunks/main.js",
